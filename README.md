@@ -56,6 +56,5 @@ A fully responsive, feature-rich web application that displays a dynamic multi-c
 ### Development Features
 - **Component-Based Architecture**
 - **Error Boundaries**
-- **Lazy Loading**
 - **Debounced Search**
 - **Local Storage Caching**
