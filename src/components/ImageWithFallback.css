@@ -1,0 +1,12 @@
+/* Add any specific styles for the image component if needed */
+.image-fallback {
+  transition: opacity 0.3s ease;
+}
+
+.image-fallback-loading {
+  opacity: 0.6;
+}
+
+.image-fallback-loaded {
+  opacity: 1;
+}

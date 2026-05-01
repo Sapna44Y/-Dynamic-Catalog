@@ -1,0 +1,252 @@
+.category-page {
+  min-height: 100vh;
+}
+
+.category-header-page {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.back-button-page {
+  padding: 8px 16px;
+  background: #f0f0f0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.back-button-page:hover {
+  background: #e0e0e0;
+  transform: translateX(-3px);
+}
+
+.category-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.category-icon-page {
+  font-size: 3rem;
+}
+
+.category-title-page {
+  font-size: 2.5rem;
+  color: #333;
+  margin: 0 0 0.5rem 0;
+}
+
+.category-description {
+  color: #666;
+  font-size: 1rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.sort-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sort-controls label {
+  font-weight: 500;
+  color: #555;
+}
+
+.sort-controls select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.view-controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.view-btn {
+  padding: 8px 16px;
+  background: #f0f0f0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.view-btn.active {
+  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+  color: white;
+}
+
+.items-container {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.items-container.grid {
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.items-container.list {
+  grid-template-columns: 1fr;
+}
+
+.items-container.list .item-wrapper {
+  width: 100%;
+}
+
+.items-container.list .item-card {
+  flex-direction: row;
+}
+
+.items-container.list .card-image-container {
+  width: 200px;
+  height: 150px;
+}
+
+.items-container.list .card-content {
+  flex: 1;
+}
+
+.stats-footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.no-items {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: white;
+  border-radius: 20px;
+}
+
+.no-items-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.no-items h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.no-items p {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.no-items button {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.not-found-content {
+  text-align: center;
+  background: white;
+  padding: 3rem;
+  border-radius: 20px;
+  max-width: 500px;
+  margin: 1rem;
+}
+
+.not-found-content h1 {
+  font-size: 4rem;
+  color: #8b5cf6;
+  margin-bottom: 0.5rem;
+}
+
+.not-found-content h2 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.not-found-content p {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.home-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.home-link:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .category-header-page {
+    padding: 1.5rem;
+  }
+
+  .category-title-page {
+    font-size: 1.8rem;
+  }
+
+  .category-icon-page {
+    font-size: 2rem;
+  }
+
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .items-container.list .item-card {
+    flex-direction: column;
+  }
+
+  .items-container.list .card-image-container {
+    width: 100%;
+    height: 200px;
+  }
+
+  .not-found-content {
+    padding: 2rem;
+  }
+
+  .not-found-content h1 {
+    font-size: 3rem;
+  }
+}
