@@ -59,5 +59,3 @@ A fully responsive, feature-rich web application that displays a dynamic multi-c
 - **Lazy Loading**
 - **Debounced Search**
 - **Local Storage Caching**
-
-## 📁 Project Structure
